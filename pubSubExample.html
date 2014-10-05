@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <script  src="assets/lib/angular.min.js"></script>
+    <meta charset="utf-8">
+    <title>AngularJS Pub-Sub Example</title>
+</head>
+<body>
+
+<div ng-controller="PubController">
+    <button name=”publishButton” ng-click="publishMessage()">Publish</button>
+</div>
+
+<div ng-controller="SubController">
+    <h2>{{recievedMessage}}</h2>
+</div>
+
+<script>
+    var myApp = angular.module('myApp', []);
+    myApp.controller("PubController",
+    function($scope){
+        $scope.publishMessage = function(){
+            $scope.$emit("helloMessage",
+                    {"data":"Hello, message is publshed using emit."});
+        }
+    });
+    myApp.controller("SubController",
+    function($scope,$rootScope,$log){
+        $rootScope.$on("helloMessage",function(event, arguments){
+          $log.log(event);
+          $scope.recievedMessage = arguments.data;
+       });
+    });
+</script>
+</body>
+</html>

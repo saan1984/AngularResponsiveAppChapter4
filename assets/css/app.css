@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url("../font/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 8, ../sass/_icon-font.scss */
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 21, ../sass/_icon-font.scss */
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+
+/* line 26, ../sass/_icon-font.scss */
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 39, ../sass/_icon-font.scss */
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+
+/* line 2, ../sass/app.scss */
+body {
+  background: #eee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 1rem 2rem;
+}
+/* line 9, ../sass/app.scss */
+body .my-profile-container {
+  background: white;
+  width: 100%;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+/* line 15, ../sass/app.scss */
+body .my-profile-container .row .pic {
+  text-align: center;
+  padding: 0 0 20px;
+}
+/* line 18, ../sass/app.scss */
+body .my-profile-container .row .pic .largeDevice {
+  color: green;
+  font-size: 4rem;
+  background: #eee;
+  font-weight: 100;
+}
+/* line 24, ../sass/app.scss */
+body .my-profile-container .row .pic .mediumDevice {
+  color: green;
+  font-size: 2rem;
+  background: #eee;
+  font-weight: 100;
+}
+/* line 30, ../sass/app.scss */
+body .my-profile-container .row .pic .smallDevice {
+  color: green;
+  font-size: 1rem;
+  background: #eee;
+  font-weight: 300;
+}
+/* line 36, ../sass/app.scss */
+body .my-profile-container .row .pic .profile-image {
+  border-radius: 100%;
+}
+/* line 40, ../sass/app.scss */
+body .my-profile-container .row .about {
+  display: flex;
+}
+/* line 42, ../sass/app.scss */
+body .my-profile-container .row .about .btn {
+  border: 0 none;
+  color: green;
+  height: 60px;
+  width: 50%;
+  margin: 5px 0px;
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 51, ../sass/app.scss */
+body .my-profile-container .row .about .btn:hover {
+  background: green;
+  color: #eee;
+}
+/* line 55, ../sass/app.scss */
+body .my-profile-container .row .about .btn.selected {
+  background: green;
+  color: #eee;
+  cursor: text;
+}
+/* line 63, ../sass/app.scss */
+body .my-profile-container .row .display {
+  height: 100%;
+  padding: 0px 30px;
+}
+/* line 66, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional, body .my-profile-container .row .display .detailPersonal {
+  position: relative;
+}
+/* line 67, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .section, body .my-profile-container .row .display .detailPersonal .section {
+  display: flex;
+}
+/* line 69, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .section .divider, body .my-profile-container .row .display .detailPersonal .section .divider {
+  width: 50%;
+  margin-right: 10px;
+}
+/* line 72, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .section .divider h4, body .my-profile-container .row .display .detailPersonal .section .divider h4 {
+  font-weight: 300;
+  color: green;
+  margin: 0px;
+}
+/* line 82, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme:first-letter {
+  color: green;
+}
+/* line 85, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.smallPara, body .my-profile-container .row .display .detailPersonal .aboutme.smallPara {
+  font-size: 0.8rem;
+}
+/* line 87, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.smallPara:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.smallPara:first-letter {
+  font-size: 1.6rem;
+}
+/* line 91, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.mediumPara, body .my-profile-container .row .display .detailPersonal .aboutme.mediumPara {
+  font-size: 1.2rem;
+}
+/* line 93, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.mediumPara:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.mediumPara:first-letter {
+  font-size: 3rem;
+}
+/* line 97, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.largePara, body .my-profile-container .row .display .detailPersonal .aboutme.largePara {
+  font-size: 2rem;
+}
+/* line 99, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.largePara:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.largePara:first-letter {
+  font-size: 4rem;
+}
+/* line 105, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .item-list-container ol, body .my-profile-container .row .display .detailPersonal .item-list-container ol {
+  margin-bottom: 2px;
+  font-size: 1rem;
+}
+/* line 108, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .item-list-container ol .smallText, body .my-profile-container .row .display .detailPersonal .item-list-container ol .smallText {
+  font-size: 0.8rem;
+}
+/* line 113, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .item-list-container .show-more, body .my-profile-container .row .display .detailPersonal .item-list-container .show-more {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: blue;
+  margin-left: 10px;
+}
+/* line 124, ../sass/app.scss */
+body .my-profile-container .row .footer {
+  background: #eee;
+  text-align: center;
+}
+/* line 127, ../sass/app.scss */
+body .my-profile-container .row .footer a {
+  color: green;
+  text-decoration: none;
+  font-weight: 300%;
+}

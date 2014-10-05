@@ -1,0 +1,81 @@
+<div class="my-profile-container">
+    <div class="row">
+        <div class="pic">
+            <responsive-header targetText="Sandeep Kumar Patel">
+            </responsive-header>
+            <responsive-image
+                    imagesrc="http://www.gravatar.com/avatar/4205261332ff131e971b48db31dcb528.png"
+                    imagealt="profile">
+            </responsive-image>
+        </div>
+    </div>
+    <div class="row">
+        <div class="about">
+            <button class="btn" ng-model="professional"
+                    ng-click="getDetail($event)"
+                    ng-class="{'selected':selected}"
+                    ng-disabled="selected">
+                Professional
+            </button>
+            <button class="btn" ng-model="personal"
+                    ng-click="getDetail($event)"
+                    ng-disabled="!selected"
+                    ng-class="{'selected':!selected}">
+                Personal
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="display">
+            <div class="detailProfessional" ng-show="selected">
+                <responsive-paragraph targetPara="{{professional.aboutme}}">
+                </responsive-paragraph>
+                <div class="section">
+                    <div class="divider">
+                        <h4>No of Year Experience</h4>
+                        {{professional.years}}
+                        <h4>Job Roles</h4>
+                        <responsive-list targetlist="professional.roles">
+                        </responsive-list>
+                        <h4>Languages Known</h4>
+                        <responsive-list targetlist="professional.languages">
+                        </responsive-list>
+                    </div>
+                    <div class="divider">
+                        <h4>Web Technologies</h4>
+                        <responsive-list targetlist="professional.webdevelopment">
+                        </responsive-list>
+                        <h4> Tools</h4>
+                        <responsive-list targetlist="professional.tools">
+                        </responsive-list>
+                    </div>
+                </div>
+            </div>
+            <div class="detailPersonal" ng-show="!selected">
+                <div class="section">
+                    <div class="divider">
+                        <h4>Full Name </h4> {{personal.name}}
+                        <h4>Spouse Name </h4> {{personal.spouse}}
+                        <h4>Father Name </h4> {{personal.father}}
+                        <h4>Mother Name </h4> {{personal.mother}}
+                        <h4>Blood Group </h4> {{personal.bloodGroup}}
+                        <h4>Height </h4> {{personal.height}}
+                    </div>
+                    <div class="divider">
+                        <h4>Weight </h4> {{personal.weight}}
+                        <h4>Chest </h4> {{personal.chest}}
+                        <h4>Address </h4> {{personal.address}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="footer">
+            <a ng-href='{{professional.social.twitter}}' class='symbol' title='&#xe286;'></a>
+            <a ng-href='{{professional.social.facebook}}' class='symbol' title='&#xe227;'></a>
+            <a ng-href='{{professional.social.linkedin}}' class='symbol' title='&#xe252;'></a>
+            <a ng-href='{{professional.social.googleplus}}' class='symbol' title='&#xe239;'></a>
+        </div>
+    </div>
+</div>
