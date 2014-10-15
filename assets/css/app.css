@@ -56,42 +56,43 @@ body {
   font-weight: 300;
   padding: 1rem 2rem;
 }
-/* line 9, ../sass/app.scss */
+/* line 8, ../sass/app.scss */
 body .my-profile-container {
   background: white;
   width: 100%;
   margin: auto;
   box-shadow: 2px 2px 2px 2px lightgrey;
 }
-/* line 15, ../sass/app.scss */
+/* line 14, ../sass/app.scss */
 body .my-profile-container .row .pic {
   text-align: center;
   padding: 0 0 20px;
 }
-/* line 18, ../sass/app.scss */
-body .my-profile-container .row .pic .largeDevice {
+/* line 17, ../sass/app.scss */
+body .my-profile-container .row .pic .large-screen {
   color: green;
   font-size: 4rem;
   background: #eee;
   font-weight: 100;
 }
-/* line 24, ../sass/app.scss */
-body .my-profile-container .row .pic .mediumDevice {
+/* line 23, ../sass/app.scss */
+body .my-profile-container .row .pic .medium-screen {
   color: green;
   font-size: 2rem;
   background: #eee;
   font-weight: 100;
 }
-/* line 30, ../sass/app.scss */
-body .my-profile-container .row .pic .smallDevice {
+/* line 29, ../sass/app.scss */
+body .my-profile-container .row .pic .small-screen {
   color: green;
   font-size: 1rem;
   background: #eee;
   font-weight: 300;
 }
-/* line 36, ../sass/app.scss */
+/* line 35, ../sass/app.scss */
 body .my-profile-container .row .pic .profile-image {
   border-radius: 100%;
+  -o-border-radius: 100%;
 }
 /* line 40, ../sass/app.scss */
 body .my-profile-container .row .about {
@@ -143,44 +144,44 @@ body .my-profile-container .row .display .detailProfessional .section .divider h
   color: green;
   margin: 0px;
 }
-/* line 82, ../sass/app.scss */
+/* line 81, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .aboutme:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme:first-letter {
   color: green;
 }
-/* line 85, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.smallPara, body .my-profile-container .row .display .detailPersonal .aboutme.smallPara {
+/* line 84, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.small-screen, body .my-profile-container .row .display .detailPersonal .aboutme.small-screen {
   font-size: 0.8rem;
 }
-/* line 87, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.smallPara:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.smallPara:first-letter {
+/* line 86, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.small-screen:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.small-screen:first-letter {
   font-size: 1.6rem;
 }
-/* line 91, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.mediumPara, body .my-profile-container .row .display .detailPersonal .aboutme.mediumPara {
+/* line 90, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.medium-screen, body .my-profile-container .row .display .detailPersonal .aboutme.medium-screen {
   font-size: 1.2rem;
 }
-/* line 93, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.mediumPara:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.mediumPara:first-letter {
+/* line 92, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.medium-screen:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.medium-screen:first-letter {
   font-size: 3rem;
 }
-/* line 97, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.largePara, body .my-profile-container .row .display .detailPersonal .aboutme.largePara {
+/* line 96, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.large-screen, body .my-profile-container .row .display .detailPersonal .aboutme.large-screen {
   font-size: 2rem;
 }
-/* line 99, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.largePara:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.largePara:first-letter {
+/* line 98, ../sass/app.scss */
+body .my-profile-container .row .display .detailProfessional .aboutme.large-screen:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.large-screen:first-letter {
   font-size: 4rem;
 }
-/* line 105, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .item-list-container ol, body .my-profile-container .row .display .detailPersonal .item-list-container ol {
   margin-bottom: 2px;
   font-size: 1rem;
 }
-/* line 108, ../sass/app.scss */
+/* line 107, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .item-list-container ol .smallText, body .my-profile-container .row .display .detailPersonal .item-list-container ol .smallText {
   font-size: 0.8rem;
 }
-/* line 113, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .item-list-container .show-more, body .my-profile-container .row .display .detailPersonal .item-list-container .show-more {
   background: none;
   border: none;
@@ -188,12 +189,12 @@ body .my-profile-container .row .display .detailProfessional .item-list-containe
   color: blue;
   margin-left: 10px;
 }
-/* line 124, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 body .my-profile-container .row .footer {
   background: #eee;
   text-align: center;
 }
-/* line 127, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
 body .my-profile-container .row .footer a {
   color: green;
   text-decoration: none;

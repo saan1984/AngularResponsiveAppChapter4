@@ -1,0 +1,67 @@
+<div class="my-profile-container">
+    <div class="row">
+        <div class="pic">
+            <h1 class="name">Sandeep Kumar Patel</h1>
+            <img class="profile-image" src="http://www.gravatar.com/avatar/4205261332ff131e971b48db31dcb528.png"
+                 alt="profile image"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="display">
+            <div class="detailProfessional" ng-show="selected">
+                <p class="aboutme">
+                    {{professional.aboutme}}
+                </p>
+                <div class="section">
+                    <div class="divider">
+                        <h4>No of Year Experience</h4>
+                        {{professional.years}}
+                        <h4>Job Roles</h4>
+                        <ol>
+                            <li ng-repeat="role in professional.roles">{{role}}</li>
+                        </ol>
+                        <h4>Languages Known</h4>
+                        <ol>
+                            <li ng-repeat="language in professional.languages">{{language}}</li>
+                        </ol>
+                        <h4> Tools</h4>
+                        <ol>
+                            <li ng-repeat="tool in professional.tools">{{tool}}</li>
+                        </ol>
+                    </div>
+                    <div class="divider">
+                        <h4>Web Technologies</h4>
+                        <ol>
+                            <li ng-repeat="webdev in professional.webdevelopment">{{webdev}}</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="detailPersonal" ng-show="!selected">
+                <div class="section">
+                    <div class="divider">
+                        <h4>Full Name </h4> {{personal.name}}
+                        <h4>Spouse Name </h4> {{personal.spouse}}
+                        <h4>Father Name </h4> {{personal.father}}
+                        <h4>Mother Name </h4> {{personal.mother}}
+                        <h4>Blood Group </h4> {{personal.bloodGroup}}
+                        <h4>Height </h4> {{personal.height}}
+                    </div>
+                    <div class="divider">
+                        <h4>Weight </h4> {{personal.weight}}
+                        <h4>Chest </h4> {{personal.chest}}
+                        <h4>Address </h4> {{personal.address}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="footer">
+            <a ng-href='{{professional.social.twitter}}' class='symbol' title='&#xe286;'></a>
+            <a ng-href='{{professional.social.facebook}}' class='symbol' title='&#xe227;'></a>
+            <a ng-href='{{professional.social.linkedin}}' class='symbol' title='&#xe252;'></a>
+            <a ng-href='{{professional.social.googleplus}}' class='symbol' title='&#xe239;'></a>
+        </div>
+    </div>
+</div>

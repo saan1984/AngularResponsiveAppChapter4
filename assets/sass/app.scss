@@ -5,7 +5,6 @@ body {
   font-size: 20px;
   font-weight: 300;
   padding: 1rem 2rem;
-
   .my-profile-container {
     background: white;
     width: 100%;
@@ -15,19 +14,19 @@ body {
       .pic {
         text-align: center;
         padding: 0 0 20px;
-        .largeDevice{
+        .large-screen{
           color: green;
           font-size: 4rem;
           background: #eee;
           font-weight: 100;
         }
-        .mediumDevice{
+        .medium-screen{
           color: green;
           font-size: 2rem;
           background: #eee;
           font-weight: 100;
         }
-        .smallDevice{
+        .small-screen{
           color: green;
           font-size: 1rem;
           background: #eee;
@@ -35,6 +34,7 @@ body {
         }
         .profile-image {
           border-radius: 100%;
+          -o-border-radius: 100%;
         }
       }
       .about {
@@ -76,25 +76,24 @@ body {
               }
             }
           }
-
           position: relative;
           .aboutme {
             &:first-letter {
               color:green;
             }
-            &.smallPara{
+            &.small-screen{
               font-size: 0.8rem;
               &:first-letter {
                 font-size: 1.6rem;
               }
             }
-            &.mediumPara{
+            &.medium-screen{
               font-size: 1.2rem;
               &:first-letter {
                 font-size: 3rem;
               }
             }
-            &.largePara{
+            &.large-screen{
               font-size: 2rem;
               &:first-letter {
                 font-size: 4rem;
