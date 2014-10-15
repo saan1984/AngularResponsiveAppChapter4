@@ -52,7 +52,7 @@ angular.module('profileApp', [
                 scope: {
                     'respText': '@targettext'
                 },
-                template: "<p class='{{deviceSize}}'> {{respText}} </p>",
+                template: "<p class='header {{deviceSize}}'> {{respText}} </p>",
                 link: function (scope, element, attribute) {
                     scope.$on("breakpointClassChange", function (event, argument) {
                         $log.log("responsiveHeader receiving breakpointClassChange ", argument);
@@ -72,7 +72,7 @@ angular.module('profileApp', [
                 scope: {
                     'respPara': '@targetpara'
                 },
-                template: "<p class='{{paragraphSize}}'> {{respPara}} </p>",
+                template: "<p class='paragraph {{paragraphSize}}'> {{respPara}} </p>",
                 link: function (scope, element, attribute) {
                     scope.$on("breakpointClassChange", function (event, argument) {
                         $log.log("responsiveParagraph receiving breakpointClassChange ", argument);
@@ -130,6 +130,26 @@ angular.module('profileApp', [
             };
         }])
 
+    .directive("responsiveText",
+    ["$log", "$window",
+        function ($log, $window) {
+            return {
+                restrict: 'E',
+                replace: true,
+                scope: {
+                    'respText': '@targettext'
+                },
+                template: "<p class='text {{deviceSize}}'> {{respText}} </p>",
+                link: function (scope, element, attribute) {
+                    scope.$on("breakpointClassChange", function (event, argument) {
+                        $log.log("responsiveText receiving breakpointClassChange ", argument);
+                        scope.$apply(function () {
+                            scope.deviceSize = argument.styleClass;
+                        })
+                    });
+                }};
+        }])
+
     .directive("responsiveList",
     ["$log", "$window",
         function ($log, $window) {
@@ -140,7 +160,7 @@ angular.module('profileApp', [
                     'itemList': '=targetlist'
                 },
                 template: '<div class="item-list-container">' +
-                    '<ol>' +
+                    '<ol class="{{deviceSize}}">' +
                     '<li ng-class="{smallText:isMorePresent}" ng-repeat="item in itemDisplayList">{{item}}</li>' +
                     '</ol>' +
                     '<button class="show-more" ng-show="isMorePresent" ' +
@@ -167,6 +187,12 @@ angular.module('profileApp', [
                             scope.itemDisplayList = scope.itemList;
                         }
                     });
+                    scope.$on("breakpointClassChange", function (event, argument) {
+                        $log.log("responsiveHeader receiving breakpointClassChange ", argument);
+                        scope.$apply(function () {
+                            scope.deviceSize = argument.styleClass;
+                        })
+                    });
                     angular.element($window).bind('resize', function () {
                         scope.$apply(function () {
                             scope.height = $window.outerHeight;
@@ -178,4 +204,5 @@ angular.module('profileApp', [
                     }
                 }};
         }]);
+
 

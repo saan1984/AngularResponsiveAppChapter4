@@ -32,20 +32,26 @@
                 </responsive-paragraph>
                 <div class="section">
                     <div class="divider">
-                        <h4>No of Year Experience</h4>
-                        {{professional.years}}
-                        <h4>Job Roles</h4>
+                        <responsive-header targetText="Experience">
+                        </responsive-header>
+                        <responsive-text targetText="{{professional.years}}">
+                        </responsive-text>
+                        <responsive-header targetText="Job Roles">
+                        </responsive-header>
                         <responsive-list targetlist="professional.roles">
                         </responsive-list>
-                        <h4>Languages Known</h4>
+                        <responsive-header targetText="Languages Known">
+                        </responsive-header>
                         <responsive-list targetlist="professional.languages">
                         </responsive-list>
                     </div>
                     <div class="divider">
-                        <h4>Web Technologies</h4>
+                        <responsive-header targetText="Web Technologies">
+                        </responsive-header>
                         <responsive-list targetlist="professional.webdevelopment">
                         </responsive-list>
-                        <h4> Tools</h4>
+                        <responsive-header targetText="Tools">
+                        </responsive-header>
                         <responsive-list targetlist="professional.tools">
                         </responsive-list>
                     </div>
@@ -54,17 +60,44 @@
             <div class="detailPersonal" ng-show="!selected">
                 <div class="section">
                     <div class="divider">
-                        <h4>Full Name </h4> {{personal.name}}
-                        <h4>Spouse Name </h4> {{personal.spouse}}
-                        <h4>Father Name </h4> {{personal.father}}
-                        <h4>Mother Name </h4> {{personal.mother}}
-                        <h4>Blood Group </h4> {{personal.bloodGroup}}
-                        <h4>Height </h4> {{personal.height}}
+                        <responsive-header targetText="Full Name">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.name}}">
+                        </responsive-text>
+                        <responsive-header targetText="Spouse Name">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.spouse}}">
+                        </responsive-text>
+                        <responsive-header targetText="Father Name">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.father}}">
+                        </responsive-text>
+                        <responsive-header targetText="Mother Name">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.mother}}">
+                        </responsive-text>
+                        <responsive-header targetText="Blood Group">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.bloodGroup}}">
+                        </responsive-text>
+                        <responsive-header targetText="Height">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.height}}">
+                        </responsive-text>
                     </div>
                     <div class="divider">
-                        <h4>Weight </h4> {{personal.weight}}
-                        <h4>Chest </h4> {{personal.chest}}
-                        <h4>Address </h4> {{personal.address}}
+                        <responsive-header targetText="Weight">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.weight}}">
+                        </responsive-text>
+                        <responsive-header targetText="Chest">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.chest}}">
+                        </responsive-text>
+                        <responsive-header targetText="Address">
+                        </responsive-header>
+                        <responsive-text targetText="{{personal.address}}">
+                        </responsive-text>
                     </div>
                 </div>
             </div>

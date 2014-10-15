@@ -1,14 +1,17 @@
 @import "icon-font";
 @import "responsive-paragraph";
+@import "responsive-header";
+@import "responsive-list";
+@import "responsive-text";
 body {
   background: #eee;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  padding: 1rem 2rem;
+  overflow-x:hidden;
   .my-profile-container {
     background: white;
-    width: 100%;
+    width: 90%;
     margin: auto;
     box-shadow: 2px 2px 2px 2px lightgrey;
     .row {
@@ -45,13 +48,15 @@ body {
       }
       .display {
         height: 100%;
-        padding: 0px 30px;
+        padding: 0px 10px;
         .detailProfessional, .detailPersonal {
           .section {
             display: flex;
             .divider {
               width: 50%;
-              margin-right:10px;
+              &:first-child{
+                margin-right:10px;
+              }
               h4 {
                 font-weight: 300;
                 color: green;
@@ -61,24 +66,6 @@ body {
           }
           position: relative;
           padding: 2px;
-          .item-list-container{
-            ol{
-              margin-bottom: 2px;
-              font-size:1rem;
-              .smallText{
-                font-size:0.8rem;
-              }
-            }
-
-            .show-more{
-              background: none;
-              border: none;
-              cursor: pointer;
-              color:blue;
-              margin-left:10px;
-            }
-          }
-
         }
       }
       .footer {
