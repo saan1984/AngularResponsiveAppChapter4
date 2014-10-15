@@ -28,7 +28,7 @@ angular.module('profileApp', [
                     'ng-src="{{modifiedsrc}}" alt="{{respalt}}"/>',
                 link: function (scope, element, attribute) {
                     scope.$on("breakpointClassChange", function (event, argument) {
-                        $log.log("responsiveImage recieving breakpointClassChange ", argument);
+                        $log.log("responsiveImage receiving breakpointClassChange ", argument);
                         scope.$apply(function () {
                             if (angular.equals(argument.styleClass, "large-screen")) {
                                 scope.modifiedsrc = scope.respsrc + "?s=250";
@@ -55,7 +55,7 @@ angular.module('profileApp', [
                 template: "<p class='{{deviceSize}}'> {{respText}} </p>",
                 link: function (scope, element, attribute) {
                     scope.$on("breakpointClassChange", function (event, argument) {
-                        $log.log("responsiveHeader recieving breakpointClassChange ", argument);
+                        $log.log("responsiveHeader receiving breakpointClassChange ", argument);
                         scope.$apply(function () {
                             scope.deviceSize = argument.styleClass;
                         })
@@ -72,10 +72,10 @@ angular.module('profileApp', [
                 scope: {
                     'respPara': '@targetpara'
                 },
-                template: "<p class='aboutme {{paragraphSize}}'> {{respPara}} </p>",
+                template: "<p class='{{paragraphSize}}'> {{respPara}} </p>",
                 link: function (scope, element, attribute) {
                     scope.$on("breakpointClassChange", function (event, argument) {
-                        $log.log("responsiveParagraph recieving breakpointClassChange ", argument);
+                        $log.log("responsiveParagraph receiving breakpointClassChange ", argument);
                         scope.$apply(function () {
                             scope.paragraphSize = argument.styleClass;
                         })

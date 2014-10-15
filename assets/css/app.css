@@ -48,7 +48,36 @@ a.symbol:before {
   font-size: 130%;
 }
 
-/* line 2, ../sass/app.scss */
+/* line 2, ../sass/_responsive-paragraph.scss */
+p:first-letter {
+  color: green;
+}
+/* line 5, ../sass/_responsive-paragraph.scss */
+p.small-screen {
+  font-size: 0.8rem;
+}
+/* line 7, ../sass/_responsive-paragraph.scss */
+p.small-screen:first-letter {
+  font-size: 1.6rem;
+}
+/* line 11, ../sass/_responsive-paragraph.scss */
+p.medium-screen {
+  font-size: 1.2rem;
+}
+/* line 13, ../sass/_responsive-paragraph.scss */
+p.medium-screen:first-letter {
+  font-size: 3rem;
+}
+/* line 17, ../sass/_responsive-paragraph.scss */
+p.large-screen {
+  font-size: 2rem;
+}
+/* line 19, ../sass/_responsive-paragraph.scss */
+p.large-screen:first-letter {
+  font-size: 4rem;
+}
+
+/* line 3, ../sass/app.scss */
 body {
   background: #eee;
   font-family: 'Roboto', sans-serif;
@@ -56,49 +85,28 @@ body {
   font-weight: 300;
   padding: 1rem 2rem;
 }
-/* line 8, ../sass/app.scss */
+/* line 9, ../sass/app.scss */
 body .my-profile-container {
   background: white;
   width: 100%;
   margin: auto;
   box-shadow: 2px 2px 2px 2px lightgrey;
 }
-/* line 14, ../sass/app.scss */
+/* line 15, ../sass/app.scss */
 body .my-profile-container .row .pic {
   text-align: center;
   padding: 0 0 20px;
 }
-/* line 17, ../sass/app.scss */
-body .my-profile-container .row .pic .large-screen {
-  color: green;
-  font-size: 4rem;
-  background: #eee;
-  font-weight: 100;
-}
-/* line 23, ../sass/app.scss */
-body .my-profile-container .row .pic .medium-screen {
-  color: green;
-  font-size: 2rem;
-  background: #eee;
-  font-weight: 100;
-}
-/* line 29, ../sass/app.scss */
-body .my-profile-container .row .pic .small-screen {
-  color: green;
-  font-size: 1rem;
-  background: #eee;
-  font-weight: 300;
-}
-/* line 35, ../sass/app.scss */
+/* line 18, ../sass/app.scss */
 body .my-profile-container .row .pic .profile-image {
   border-radius: 100%;
   -o-border-radius: 100%;
 }
-/* line 40, ../sass/app.scss */
+/* line 23, ../sass/app.scss */
 body .my-profile-container .row .about {
   display: flex;
 }
-/* line 42, ../sass/app.scss */
+/* line 25, ../sass/app.scss */
 body .my-profile-container .row .about .btn {
   border: 0 none;
   color: green;
@@ -109,79 +117,52 @@ body .my-profile-container .row .about .btn {
   font-size: 16px;
   cursor: pointer;
 }
-/* line 51, ../sass/app.scss */
+/* line 34, ../sass/app.scss */
 body .my-profile-container .row .about .btn:hover {
   background: green;
   color: #eee;
 }
-/* line 55, ../sass/app.scss */
+/* line 38, ../sass/app.scss */
 body .my-profile-container .row .about .btn.selected {
   background: green;
   color: #eee;
   cursor: text;
 }
-/* line 63, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
 body .my-profile-container .row .display {
   height: 100%;
   padding: 0px 30px;
 }
-/* line 66, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional, body .my-profile-container .row .display .detailPersonal {
   position: relative;
+  padding: 2px;
 }
-/* line 67, ../sass/app.scss */
+/* line 50, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .section, body .my-profile-container .row .display .detailPersonal .section {
   display: flex;
 }
-/* line 69, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .section .divider, body .my-profile-container .row .display .detailPersonal .section .divider {
   width: 50%;
   margin-right: 10px;
 }
-/* line 72, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .section .divider h4, body .my-profile-container .row .display .detailPersonal .section .divider h4 {
   font-weight: 300;
   color: green;
   margin: 0px;
 }
-/* line 81, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme:first-letter {
-  color: green;
-}
-/* line 84, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.small-screen, body .my-profile-container .row .display .detailPersonal .aboutme.small-screen {
-  font-size: 0.8rem;
-}
-/* line 86, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.small-screen:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.small-screen:first-letter {
-  font-size: 1.6rem;
-}
-/* line 90, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.medium-screen, body .my-profile-container .row .display .detailPersonal .aboutme.medium-screen {
-  font-size: 1.2rem;
-}
-/* line 92, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.medium-screen:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.medium-screen:first-letter {
-  font-size: 3rem;
-}
-/* line 96, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.large-screen, body .my-profile-container .row .display .detailPersonal .aboutme.large-screen {
-  font-size: 2rem;
-}
-/* line 98, ../sass/app.scss */
-body .my-profile-container .row .display .detailProfessional .aboutme.large-screen:first-letter, body .my-profile-container .row .display .detailPersonal .aboutme.large-screen:first-letter {
-  font-size: 4rem;
-}
-/* line 104, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .item-list-container ol, body .my-profile-container .row .display .detailPersonal .item-list-container ol {
   margin-bottom: 2px;
   font-size: 1rem;
 }
-/* line 107, ../sass/app.scss */
+/* line 68, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .item-list-container ol .smallText, body .my-profile-container .row .display .detailPersonal .item-list-container ol .smallText {
   font-size: 0.8rem;
 }
-/* line 112, ../sass/app.scss */
+/* line 73, ../sass/app.scss */
 body .my-profile-container .row .display .detailProfessional .item-list-container .show-more, body .my-profile-container .row .display .detailPersonal .item-list-container .show-more {
   background: none;
   border: none;
@@ -189,12 +170,12 @@ body .my-profile-container .row .display .detailProfessional .item-list-containe
   color: blue;
   margin-left: 10px;
 }
-/* line 123, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 body .my-profile-container .row .footer {
   background: #eee;
   text-align: center;
 }
-/* line 126, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 body .my-profile-container .row .footer a {
   color: green;
   text-decoration: none;
