@@ -100,7 +100,9 @@ angular.module('profileApp', [
                     //Scope watcher for styleClass property to broadcast breakpointClassChange event
                     scope.$watch('breakpoint.styleClass', function (newStyleClass, oldStyleClass) {
                         if (newStyleClass.length > 0 && newStyleClass != oldStyleClass) {
-                            scope.broadcastBreakEvent();
+                            $timeout(function () {
+                                scope.broadcastBreakEvent();
+                            });
                         }
                     });
                     //Scope watcher for windowSize property to update the new style class
@@ -125,7 +127,6 @@ angular.module('profileApp', [
                         $timeout(function () {
                             scope.broadcastBreakEvent();
                         },100);
-
                     });
                 }
             };
