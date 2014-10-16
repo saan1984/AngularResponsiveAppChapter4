@@ -95,9 +95,7 @@ angular.module('profileApp', [
                     //Method for broadcast breakpointClassChange event
                     scope.broadcastBreakEvent = function () {
                         $log.log("Broadcasting breakpointClassChange...", scope.breakpoint);
-                        $timeout(function () {
-                            $rootScope.$broadcast('breakpointClassChange', scope.breakpoint);
-                        });
+                        $rootScope.$broadcast('breakpointClassChange', scope.breakpoint);
                     }
                     //Scope watcher for styleClass property to broadcast breakpointClassChange event
                     scope.$watch('breakpoint.styleClass', function (newStyleClass, oldStyleClass) {
@@ -124,10 +122,10 @@ angular.module('profileApp', [
                     });
                     //For first time page load
                     angular.element(document).ready(function () {
-                        var classLength = scope.breakpoint.styleClass.length;
-                        if(classLength >0){
+                        $timeout(function () {
                             scope.broadcastBreakEvent();
-                        }
+                        },100);
+
                     });
                 }
             };
