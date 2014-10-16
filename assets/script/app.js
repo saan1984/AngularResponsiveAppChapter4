@@ -107,10 +107,10 @@ angular.module('profileApp', [
                     });
                     //Scope watcher for windowSize property to update the new style class
                     scope.$watch('breakpoint.windowSize', function (newSize, oldSize) {
-                        var className = '';
+                        var className = 'small-screen';
                         for (var customPointKey in customBreakpoints) {
                             var breakSize = parseInt(customPointKey, 10);
-                            if (breakSize < newSize) {
+                            if ( breakSize < newSize) {
                                 className = customBreakpoints[breakSize];
                             }
                         }
@@ -124,7 +124,10 @@ angular.module('profileApp', [
                     });
                     //For first time page load
                     angular.element(document).ready(function () {
-                        scope.broadcastBreakEvent();
+                        var classLength = scope.breakpoint.styleClass.length;
+                        if(classLength >0){
+                            scope.broadcastBreakEvent();
+                        }
                     });
                 }
             };
